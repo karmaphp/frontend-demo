@@ -1,0 +1,22 @@
+{
+  "name": "karmaphp/demo",
+  "description": "Karma PHP Application Framework Demo",
+  "type": "project",
+  "require": {
+    "karmaphp/karma": "dev-master",
+    "smarty/smarty": "^3.1",
+    "twig/twig": "^2.4"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "İrfan Evrens",
+      "email": "irfanevrens@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app"
+    }
+  }
+}
