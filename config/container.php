@@ -1,5 +1,12 @@
 <?php
 
+use App\Service\SmartyService;
+use App\Service\TwigService;
+use function DI\get;
+
 return [
-    'settings.displayErrorDetails' => true
+
+    'twig'   => get(TwigService::class),
+    'smarty' => get(SmartyService::class)
+
 ];

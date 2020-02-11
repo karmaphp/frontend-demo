@@ -38,7 +38,7 @@ class MainController extends Controller
 
     public function SmartyResponse()
     {
-        return $this->smarty->fetch('Example.tpl', [
+        return $this->c->smarty->fetch('Example.tpl', [
             'firstname' => 'John',
             'lastname'  => 'Doe'
         ]);
@@ -46,7 +46,7 @@ class MainController extends Controller
 
     public function TwigResponse()
     {
-        return $this->twig->render('Example.twig', [
+        return $this->c->twig->render('Example.twig', [
             'firstname' => 'John',
             'lastname'  => 'Doe'
         ]);
